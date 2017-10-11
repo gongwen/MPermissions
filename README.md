@@ -7,23 +7,11 @@
 
 ## 引入
 
-project's build.gradle
-
-```
-buildscript {
-    dependencies {
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
-    }
-}
-```
-
 module's buid.gradle
 
 ```
-apply plugin: 'com.neenbedankt.android-apt'
-
 dependencies {
-    apt 'com.zhy:mpermission-compiler:1.0.0'
+    annotationProcessor 'com.zhy:mpermission-compiler:1.0.0'
     compile 'com.zhy:mpermission-api:1.0.0'
 }
 ```
